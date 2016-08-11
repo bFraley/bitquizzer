@@ -23,8 +23,8 @@ def compare_strings(string1, string2):
 # Compare integer string to an integer.
 # @param - Accepts [string integer] [int].
 
-def compare_intstring_to_int(numstring, intnum):
-    if int(numstring) == num:
+def compare_intstring_to_int(intstring, intnum):
+    if int(intstring) == intnum:
         return True
     else:
         return False
@@ -45,10 +45,10 @@ def compare_floatstring_tofloat(floatstring, floatnum):
 class Menu():
     def __init__(self):
         self.stars = "******************************************"
-        self.title = "Bit Quizzer - Iteractive Bitwise Practice"
+        self.title = "Bit Quizzer - Interactive Bitwise Practice"
         self.options = [
             "1. Memorize Powers",
-            "2. Head Count"
+            "2. Num Bin"
         ]
 
 

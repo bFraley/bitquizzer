@@ -2,12 +2,14 @@
 
 Command line quizzing for bitwise study.
 
-`powers2.py` runs, but is extremely basic.
+`powers2.py` and `numbin.py` run,  but are extremely basic.
 
-powers2 aids in memorizing the base 2 powers up to 10.
+powers2 - Memorize base 2 powers up to 10.
 
-More and more quizzes and features will be added over time.
+numbin - Train at writing / identifying binary numbers 1-20 
 
-The goal is to have an interactive and robust bitwise quizzing program.
+More quizzes and features will be added over time.
+
+The goal is to have an interactive and robust bitwise/binary system quizzing program.
 
 

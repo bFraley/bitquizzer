@@ -1,4 +1,4 @@
-### bitquiz
+### bitquizzer
 
 Command line quizzing for bitwise study.
 

@@ -1,5 +1,5 @@
-# Interactive Quizzer for Bitwise Practice, in Python
-# Brett Fraley 2016
+# quizlib.py -  bitquizzer - Interactive quizzer for bitwise practice.
+# Copyright by Brett Fraley 2016
 
 #-----------------
 # Helper Functions
@@ -33,31 +33,27 @@ def compare_intstring_to_int(intstring, intnum):
 # @param - Accepts [string float] [float].
 
 def compare_floatstring_tofloat(floatstring, floatnum):
-    if float(floatstring == floatnum):
+    if float(floatstring) == floatnum:
         return True
     else:
         return False
 
-#---------------
-# Menu
-#---------------
 
-class Menu():
-    def __init__(self):
-        self.stars = "******************************************"
-        self.title = "Bit Quizzer - Interactive Bitwise Practice"
-        self.options = [
-            "1. Memorize Powers",
-            "2. Num Bin"
-        ]
+# Evaluate answers in different quiz program contexts.
 
+class AnswerCheck():
+    def __init__(self, quizname):
+        self.quizname = quizname
 
+    def base2(self, answer, data):
+        if int(answer) == data:
+            return True
+        else:
+            return False
 
-
-        
-        
-           
-
-        
-
+    def bincount(self, answer, data):
+        if answer == bin(data):
+            return True
+        else:
+            return False
 

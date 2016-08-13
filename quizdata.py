@@ -1,9 +1,24 @@
 # quizdata.py -  bitquizzer - Interactive quizzer for bitwise practice.
 # Copyright by Brett Fraley 2016
 
+menu = [
+    '*******************************************',
+    'Bit Quizzer - Interactive Bitwise Practice\n',
+    'Return to this menu by typing --> menu',
+    'Close this program by typing  --> quit\n',
+    '1. Memorize Powers',
+    '2. Binary 1-20',
+    '\nChoose a menu option to begin\n'
+]
+
 quizinfo = {
-    'base2':['Base 2 Powers 0-10','\nType the integer value of the base 2 power.\n'],
-    'bincount':['Binary Numbers 1-20', '\nType the binary number of the given integer. Use 0b format.\n']
+    'base2':
+        ['Base 2 Powers 0-10',
+        '\nType the integer value of the base 2 power.\n'],
+
+    'bincount':
+        ['Binary Numbers 1-20',
+        '\nType the binary number of the given integer. Use 0b format.\n']
 }
 
 base2 = {

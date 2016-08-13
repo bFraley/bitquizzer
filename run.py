@@ -6,7 +6,6 @@
 import os
 import quizlib
 import quizdata
-import dialogue
 
 os.system('clear')
 
@@ -21,7 +20,7 @@ def bitquizzer():
     check = quizlib.AnswerCheck('default')
 
     # Print menu.
-    for line in dialogue.menu:
+    for line in quizdata.menu:
         print(line) 
 
     # Prompt for option.
@@ -29,7 +28,7 @@ def bitquizzer():
     
     # Check for 'quit' keyword, exit program.
     if option == 'quit':
-        exit(0)
+        quizlib.quit()
 
     # Reset if zero or invalid input.
     if len(option) < 1 or not option.isdigit():
@@ -48,7 +47,7 @@ def bitquizzer():
     
     # Launch the quiz.
     os.system('clear')
-    print('Starting %s' % quizdata.quizinfo[quiz_name][0])
+    print('%s started...' % quizdata.quizinfo[quiz_name][0])
     print(quizdata.quizinfo[quiz_name][1])
 
     # Quiz runtime loop.
@@ -71,7 +70,7 @@ def bitquizzer():
        
             # Check for 'quit' keyword, exit program.
             if ans == 'quit':
-               exit(0)
+               quizlib.quit()
 
             # Verify answer.
             elif check_answer(ans, program_data[key]):

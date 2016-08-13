@@ -11,6 +11,11 @@
 def prompt(msg):
     return input(msg)
 
+# Exit this program. 
+def quit():
+    print('Exiting Bit Quizzer... Have a nice day!\n')
+    return exit(0)
+
 # Compare two strings.
 # @param - Accepts 2 strings [string1, string2].
 
@@ -49,7 +54,6 @@ class AnswerCheck():
         # Don't accept alpha input for this quiz.
         if answer.isalpha():
             return False
-
         elif int(answer) == data:
             return True
         else:

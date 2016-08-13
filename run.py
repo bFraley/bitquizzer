@@ -81,9 +81,10 @@ def bitquizzer():
                 print("Incorrect\n")
                 correct = 0
 
-        # This program ends once 100 correct answers are given in a row!
+        # Quiz ends once 100 correct answers are given in a row!
         if correct == 100:
-            run = False
+            os.system('clear')
+            return bitquizzer()
 
 bitquizzer()
 

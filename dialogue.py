@@ -2,9 +2,11 @@
 
 menu = [
     '*******************************************',
-    'Bit Quizzer - Interactive Bitwise Practice\n\n',  
+    'Bit Quizzer - Interactive Bitwise Practice\n',  
+    'Return to this menu by typing --> menu',
+    'Exit bitquizzer by typing     --> quit\n',
     '1. Memorize Powers',
     '2. Binary 1-20',
-    'Choose a menu option to begin\n'
+    '\nChoose a menu option to begin\n'
 ]
 

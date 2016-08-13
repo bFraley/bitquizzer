@@ -26,15 +26,16 @@ def bitquizzer():
     # Prompt for option.
     option = quizlib.prompt('Option # ')
     
-    # Reset if zero or invalid input.
-    if len(option) < 1 or not option.isdigit():
-        return bitquizzer()         
-     
     # Check for 'quit' keyword, exit program.
     if option == 'quit':
         exit(0)
+
+    # Reset if zero or invalid input.
+    if len(option) < 1 or not option.isdigit():
+        return bitquizzer()         
     
     if option == '1':
+        
         program_data = quizdata.base2
         check_answer = check.base2
 
@@ -42,6 +43,7 @@ def bitquizzer():
         program_data = quizdata.bincount20
         check_answer = check.bincount
 
+    os.system('clear')
     print('Starting %s' % program_data['name'])
     print(program_data['howto'])
 

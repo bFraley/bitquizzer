@@ -46,7 +46,11 @@ class AnswerCheck():
         self.quizname = quizname
 
     def base2(self, answer, data):
-        if int(answer) == data:
+        # Don't accept alpha input for this quiz.
+        if answer.isalpha():
+            return False
+
+        elif int(answer) == data:
             return True
         else:
             return False
